@@ -1,15 +1,11 @@
 package com.example.lab04
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import android.view.View
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-
 class MainActivity : AppCompatActivity() {
 
     private var isIndicatorVisible = true
@@ -48,8 +44,7 @@ class MainActivity : AppCompatActivity() {
                 messageText.text = "Центральная кнопка деактивирована"
             } else {
                 yellowButton.text = "Центр"
-                yellowButton.backgroundTintList =
-                    getColorStateList(android.R.color.holo_orange_dark)
+                yellowButton.backgroundTintList = getColorStateList(android.R.color.holo_orange_dark)
                 messageText.text = "Центральаня кнпока активирована"
             }
             isCenterButtonActive = !isCenterButtonActive
@@ -58,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         greenButton.setOnClickListener {
             if (isIndicatorVisible) {
                 statusIndicator.visibility = View.INVISIBLE
-                statusText.text = "Статус: Скрыт"
+                statusText.text = "Статус: Виден"
                 messageText.text = "Индикатор скрыт"
             } else {
                 statusIndicator.visibility = View.VISIBLE
