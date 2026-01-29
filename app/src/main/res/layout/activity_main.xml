@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Панель уведомлений"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/redButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Красный"
+        android:textSize="14sp"
+        android:backgroundTint="#F44336"
+        android:layout_below="@id/titleText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"/>
+
+    <Button
+        android:id="@+id/blueButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Синий"
+        android:textSize="14sp"
+        android:backgroundTint="#2196F3"
+        android:layout_below="@id/titleText"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="16dp"/>
+
+    <Button
+        android:id="@+id/yellowButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Центр"
+        android:textSize="16sp"
+        android:backgroundTint="#FFC107"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/greenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Скрыть/Показать"
+        android:textSize="14sp"
+        android:backgroundTint="#4CAF50"
+        android:layout_below="@id/yellowButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <View
+        android:id="@+id/statusIndication"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#9E9E9E"
+        android:layout_above="@id/greenButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статус: Выкл"
+        android:textSize="16sp"
+        android:layout_toLeftOf="@id/greenButton"
+        android:layout_alignTop="@id/greenButton"
+        android:layout_alignBottom="@id/greenButton"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажмите любую кнопку"
+        android:textSize="18sp"
+        android:textColor="#666666"
+        android:layout_below="@id/greenButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>
